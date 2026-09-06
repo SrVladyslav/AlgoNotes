@@ -54,10 +54,18 @@ AlgoNotes/
     │   ├── from_two_sides/
     │   └── pointer_for_everyone/
     │
-    └── stack/
-        ├── monotonic_stack/
-        ├── pseudo_stack/
-        └── stack_of_intermediate_results/
+    ├── stack/
+    │   ├── monotonic_stack/
+    │   ├── pseudo_stack/
+    │   └── stack_of_intermediate_results/
+    │
+    ├── backtracking/
+    │   ├── backtracking/
+    │   └── bruteforce/
+    │
+    └── tree/
+        ├── bottom_up/
+        └── up_to_bottom/
 ```
 
 ### Pattern Index
@@ -109,12 +117,24 @@ Each directory focuses on a particular pattern and contains small examples desig
 - [Pseudo Stack](patterns/stack/pseudo_stack/)
 - [Stack of Intermediate Results](patterns/stack/stack_of_intermediate_results/)
 
+#### [Backtracking](patterns/backtracking/)
+
+- [Backtracking](patterns/backtracking/backtracking/)
+- [Bruteforce](patterns/backtracking/bruteforce/)
+
+#### [Tree](patterns/tree/)
+
+- [Bottom Up](patterns/tree/bottom_up/)
+- [Up to Bottom](patterns/tree/up_to_bottom/)
+
 ## Tips
 
 Beyond the per-pattern examples, some topics have extra notes on specific gotchas worth keeping in mind while solving problems:
 
 - [Linked Lists](tips/LINKED_LISTS.md) — when it's safe to share a middle node vs. when the list must be cut before rewiring pointers.
 - [Matrices](tips/MATRICES.md) — index formulas for rows, columns, and both diagonals of a matrix cell.
+- [Backtracking](tips/BACKTRACKING.md) — track state as the current value plus counters so you can tell what changed and prune branches early.
+- [Bruteforce](tips/BRUTEFORCE.md) — carry an explicit state with a "next index" to enumerate combinations without generating full permutations.
 
 ## Languages
 
@@ -215,9 +235,7 @@ but rather:
 More patterns and examples will be added over time, including topics such as:
 
 - Heaps
-- Trees
 - Graphs
-- Backtracking
 - Dynamic programming
 - Greedy algorithms
 

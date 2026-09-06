@@ -1,0 +1,3 @@
+## Green flags shortest path
+
+- If we need to find the minimum number of edges/path length/ generate path....
