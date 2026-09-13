@@ -12,7 +12,7 @@ def dijkstra(
         return {}, {}
 
     # Initialization of th ethings
-    distances: dict[str, int] = {node: float("inf") for node in graph}
+    distances: dict[tuple[int, int], int] = {node: float("inf") for node in graph}
     distances[start] = 0
     previous: dict[str, tuple[str, int]] = {start: None}
     min_heap: list[tuple[str, int]] = [(start, 0)]
